@@ -66,11 +66,41 @@ public class GuGudan {
 //    		System.out.println(9*j);
 //    		 j=j+1;
 //    	 }
+
+//    	 System.out.println("구구단 중 출력할 단은? : ");
+//         Scanner scanner = new Scanner(System.in);
+//         int number = scanner.nextInt();
+//		 for(int e=1; e<10;e++)
+//		 System.out.println(number*e);
     	 
-             System.out.println("구구단 중 출력할 단은? : ");
-         Scanner scanner = new Scanner(System.in);
-         int number = scanner.nextInt();
-		 for(int e=1; e<10;e++)
-		 System.out.println(number*e);
-             }
+    	        System.out.println("구구단 중 출력할 단은? : ");
+    	        Scanner scanner = new Scanner(System.in);
+    	        int number = scanner.nextInt();
+    	        System.out.println("number : " + number);
+    	        int z = number;
+    	        int x = 1; 
+    	        if (number < 2) {
+    	           System.out.println("error");
+    	        } else if (number > 9) {
+     	           System.out.println("error");
+    	        } else {
+       	        while(x<10) {
+    	        	System.out.println(x*z);
+    	        	x = x+1;
+    	        }
+    	        }
+    	        
+//    		        System.out.println("구구단 중 출력할 단은? : ");
+//    		        Scanner scanner = new Scanner(System.in);
+//    		        int number = scanner.nextInt();
+//    		        System.out.println("number : " + number);
+//    		        if (number < 2) {
+//    		            System.out.println("error");
+//    		        } else if (number > 9) {
+//    		            System.out.println("error");
+//    		        } else {
+//        		        for(int y=1; y<10; y++)
+//        		        	System.out.println(number*y);
+//    		        }
+    	             }
 }
