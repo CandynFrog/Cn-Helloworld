@@ -73,22 +73,22 @@ public class GuGudan {
 //		 for(int e=1; e<10;e++)
 //		 System.out.println(number*e);
     	 
-    	        System.out.println("구구단 중 출력할 단은? : ");
-    	        Scanner scanner = new Scanner(System.in);
-    	        int number = scanner.nextInt();
-    	        System.out.println("number : " + number);
-    	        int z = number;
-    	        int x = 1; 
-    	        if (number < 2) {
-    	           System.out.println("error");
-    	        } else if (number > 9) {
-     	           System.out.println("error");
-    	        } else {
-       	        while(x<10) {
-    	        	System.out.println(x*z);
-    	        	x = x+1;
-    	        }
-    	        }
+//    	        System.out.println("구구단 중 출력할 단은? : ");
+//    	        Scanner scanner = new Scanner(System.in);
+//    	        int number = scanner.nextInt();
+//    	        System.out.println("number : " + number);
+//    	        int z = number;
+//    	        int x = 1; 
+//    	        if (number < 2) {
+//    	           System.out.println("error");
+//    	        } else if (number > 9) {
+//     	           System.out.println("error");
+//    	        } else {
+//       	        while(x<10) {
+//    	        	System.out.println(x*z);
+//    	        	x = x+1;
+//    	        }
+//    	        }
     	        
 //    		        System.out.println("구구단 중 출력할 단은? : ");
 //    		        Scanner scanner = new Scanner(System.in);
@@ -102,5 +102,19 @@ public class GuGudan {
 //        		        for(int y=1; y<10; y++)
 //        		        	System.out.println(number*y);
 //    		        }
+    	 
+//         int[] result = new int[81];
+//         for(int i=0; i < result.length; i++) {
+//            	result[i]=2*(i+1);
+//         }
+//         
+//         for(int i=0; i < result.length; i++) {
+//             System.out.println(result[i]);
+//           }
+          
+       for(int b=2; b<10;b++)
+    	   for(int a=1; a<10;a++)
+		 System.out.println(a*b);
+       
     	             }
 }
