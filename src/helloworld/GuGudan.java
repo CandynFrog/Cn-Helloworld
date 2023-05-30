@@ -112,9 +112,16 @@ public class GuGudan {
 //             System.out.println(result[i]);
 //           }
           
-       for(int b=2; b<10;b++)
-    	   for(int a=1; a<10;a++)
-		 System.out.println(a*b);
-       
+//       for(int a=2; a<10;a++)
+//    	   for(int b=1; b<10;b++)
+//		 System.out.println(a*b);
+    	 
+    	 int b=2;
+       			 while(b<10)
+       			 {
+       				 for(int a=1; a<10; a++)
+    				System.out.println(a*b);
+    				b = b+1;
+    			 }
+       			 }
     	             }
-}
