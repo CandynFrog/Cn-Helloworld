@@ -71,38 +71,60 @@ public class ent {
 	public static void main(String[] args)
 	{
 		Scanner sc = new Scanner(System.in);
+		String PROMPT="cal> ";
 		boolean booTrue = true;
 		Calendar cal = Calendar.getInstance();
-		System.out.println("년도를 입력하세요");
+			System.out.println("년도를 입력하세요");
+			System.out.print(PROMPT);
 		while(!sc.hasNextInt())
 		{
 			sc.next();
 			System.out.println("제대로 된 연도를 입력해주세요\n");
+			System.out.print(PROMPT);
 		}
 		int a = sc.nextInt();
+		System.out.println("반복 횟수를 입력하세요");
+		System.out.print(PROMPT);
+		while(!sc.hasNextInt())
+		{
+			sc.next();
+			System.out.println("제대로 된 숫자를 입력해주세요\n");
+			System.out.print(PROMPT);
+				}
+		int w = sc.nextInt();
+		for(int p=0; p<w; p++)
 		while(booTrue)
 		{
 		System.out.println("원하는 달을 입력하세요");
+		System.out.print(PROMPT);
 		while(!sc.hasNextInt())
 		{
 			sc.next();
 			System.out.println("제대로 된 달을 입력해주세요\n");
+			System.out.print(PROMPT);
 		}
-		int b = sc.nextInt();
+			int b = sc.nextInt();
 		    if(b<13&b>1)
 	{
 	cal.set(a, b-1, 1);
-	int c = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
-
+	int c = cal.getActualMaximum(Calendar.DAY_OF_MONTH); 
+    {
 	System.out.printf("%d년 %d월의 마지막 날은 %d일이다\n", a, b, c);
+    }
 	break;
 	}
+		    else if(b == -1)
+		    {
+		    break;
+		    }
 		    else
 			{
 				System.out.println("제대로 된 달을 입력해주세요\n");
+				System.out.print(PROMPT);
 				continue;
 		}
 			}
 		sc.close();
+		System.out.println("End");
 }
 }
