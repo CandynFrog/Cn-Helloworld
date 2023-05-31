@@ -68,6 +68,62 @@ public class ent {
 //    sc.close();
 //    }
 //}
+//	public static void main(String[] args)
+//	{
+//		Scanner sc = new Scanner(System.in);
+//		String PROMPT="cal> ";
+//		boolean booTrue = true;
+//		Calendar cal = Calendar.getInstance();
+//			System.out.println("년도를 입력하세요");
+//			System.out.print(PROMPT);
+//		while(!sc.hasNextInt())
+//		{
+//			sc.next();
+//			System.out.println("제대로 된 연도를 입력해주세요\n");
+//			System.out.print(PROMPT);
+//		}
+//		int a = sc.nextInt();
+//		System.out.println("반복 횟수를 입력하세요");
+//		System.out.print(PROMPT);
+//		while(!sc.hasNextInt())
+//		{
+//			sc.next();
+//			System.out.println("제대로 된 숫자를 입력해주세요\n");
+//			System.out.print(PROMPT);
+//				}
+//		int w = sc.nextInt();
+//		for(int p=0; p<w; p++)
+//		while(booTrue)
+//		{
+//		System.out.println("원하는 달을 입력하세요");
+//		System.out.print(PROMPT);
+//		while(!sc.hasNextInt())
+//		{
+//			sc.next();
+//			System.out.println("제대로 된 달을 입력해주세요\n");
+//			System.out.print(PROMPT);
+//		}
+//			int b = sc.nextInt();
+//		    if(b<13&b>1)
+//	{
+//	cal.set(a, b-1, 1);
+//	int c = cal.getActualMaximum(Calendar.DAY_OF_MONTH); 
+//    {
+//	System.out.printf("%d년 %d월의 마지막 날은 %d일이다\n", a, b, c);
+//    }
+//	break;
+//	}
+//		    else
+//			{
+//				System.out.println("제대로 된 달을 입력해주세요\n");
+//				System.out.print(PROMPT);
+//				continue;
+//		}
+//			}
+//		sc.close();
+//		System.out.println("End");
+//}
+//}
 	public static void main(String[] args)
 	{
 		Scanner sc = new Scanner(System.in);
@@ -104,19 +160,35 @@ public class ent {
 			System.out.print(PROMPT);
 		}
 			int b = sc.nextInt();
-		    if(b<13&b>1)
+		    if(b<13&b>=1)
 	{
 	cal.set(a, b-1, 1);
 	int c = cal.getActualMaximum(Calendar.DAY_OF_MONTH); 
+	int d = cal.get(Calendar.DAY_OF_WEEK);
     {
-	System.out.printf("%d년 %d월의 마지막 날은 %d일이다\n", a, b, c);
+  System.out.println("--------" +a+ "년" +b+ "월-------");
+  System.out.println(" 일  월  화  수   목  금  토");
+  for(int x=1; x<=c; x++)
+  {
+		if(x==1) {
+			for(int j=1; j<d; j++) {
+				System.out.print("    ");
+			}
+		}
+		if(x<10) { 
+			System.out.print(" ");
+		}
+		System.out.print(" "+x+" ");
+		if(d%7==0) { 
+			System.out.println();
+		}
+		d++;
+  }
+  System.out.printf("%n");
+  System.out.printf("-----------------------%n");
     }
 	break;
 	}
-		    else if(b == -1)
-		    {
-		    break;
-		    }
 		    else
 			{
 				System.out.println("제대로 된 달을 입력해주세요\n");
