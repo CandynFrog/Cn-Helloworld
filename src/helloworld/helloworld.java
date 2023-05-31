@@ -1,7 +1,7 @@
-package helloworld;
-
-public class helloworld {
-public static void main(String[] args) {
-	System.out.println("되니??");
-}
-}
+//package helloworld;
+//
+//public class helloworld {
+//public static void main(String[] args) {
+//	System.out.println("되니??");
+//}
+//}
