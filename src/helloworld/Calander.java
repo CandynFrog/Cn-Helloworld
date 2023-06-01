@@ -10,7 +10,6 @@ public class Calander {
 			int f = 000000; //날짜 저쟝용 defalt변수
 			int m = 1000000; //날짜 확인용 defalt변수
 			String g = "defalt"; //일정변수
-			int fin = 0; //종료프로그램용 함수
 			Scanner sc = new Scanner(System.in); //스캐너 준비
 			String PROMPT="cal> "; //프롬프트 설정
 			boolean aoo = true; //메인화면 복귀용 반복문 준비
